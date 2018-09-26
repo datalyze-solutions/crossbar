@@ -619,7 +619,7 @@ class RouterSession(BaseSession):
 
             # if the client had a reassigned realm during authentication, restore it from the cookie
             if hasattr(self._transport, '_authrealm') and self._transport._authrealm:
-                assert u'cookie' in authmethods
+                
                 realm = self._transport._authrealm
                 authextra = self._transport._authextra
 
